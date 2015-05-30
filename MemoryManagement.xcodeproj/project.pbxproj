@@ -35,6 +35,10 @@
 		65C9D8561B19B5B60033AD35 /* Process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Process.h; sourceTree = "<group>"; };
 		65C9D8581B19B8DB0033AD35 /* ModelSetWindow.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ModelSetWindow.c; sourceTree = "<group>"; };
 		65C9D8591B19B8DB0033AD35 /* ModelSetWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelSetWindow.h; sourceTree = "<group>"; };
+		65C9D85B1B19D3810033AD35 /* process_01 */ = {isa = PBXFileReference; lastKnownFileType = text; path = process_01; sourceTree = "<group>"; };
+		65C9D85C1B19D5670033AD35 /* process_02 */ = {isa = PBXFileReference; lastKnownFileType = text; path = process_02; sourceTree = "<group>"; };
+		65C9D85D1B19D5670033AD35 /* process_03 */ = {isa = PBXFileReference; lastKnownFileType = text; path = process_03; sourceTree = "<group>"; };
+		65C9D85E1B19D5670033AD35 /* process_04 */ = {isa = PBXFileReference; lastKnownFileType = text; path = process_04; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,10 @@
 				65C9D8561B19B5B60033AD35 /* Process.h */,
 				65C9D8581B19B8DB0033AD35 /* ModelSetWindow.c */,
 				65C9D8591B19B8DB0033AD35 /* ModelSetWindow.h */,
+				65C9D85B1B19D3810033AD35 /* process_01 */,
+				65C9D85C1B19D5670033AD35 /* process_02 */,
+				65C9D85D1B19D5670033AD35 /* process_03 */,
+				65C9D85E1B19D5670033AD35 /* process_04 */,
 			);
 			path = MemoryManagement;
 			sourceTree = "<group>";

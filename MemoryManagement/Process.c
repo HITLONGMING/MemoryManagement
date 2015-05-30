@@ -10,6 +10,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define kFileAbsoluteLocation   "/Users/cyz/Desktop/C/MemoryManagement/MemoryManagement"
+
 void process_initWithIDAndPageCount(Process *process, int processID, int pageCount) {
     process->processID = processID;
     process->processPageCount = pageCount;
@@ -23,8 +25,24 @@ void process_initWithIDAndPageCount(Process *process, int processID, int pageCou
 }
 
 void process_getSequence(Process *process) {
+    FILE *fp;
+    char fileName[255];
+    sprintf(fileName, "%s/process_0%d", kFileAbsoluteLocation, process->processID);
+    
+    fp = fopen(fileName, "r");
+    if (fp == NULL) {
+        printf("error occured when read file %s\n", fileName);
+    }
+    
+    char buffer[255];
     for (int i = 0; i < process->processPageCount; i++) {
-        process->sequence[i] = rand() % kProcessPageCount + 1;
+        
+        if (feof(fp)) {
+            return;
+        }
+        
+        char *number = fgets(buffer, 1000, fp);
+        process->sequence[i] = atoi(number);
         process->sequence_count++;
     }
 }

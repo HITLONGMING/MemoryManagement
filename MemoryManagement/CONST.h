@@ -15,7 +15,7 @@ typedef int BOOL;
 #define NO  0
 
 //数组最大长度
-#define MAX_LENGTH  1500
+#define MAX_LENGTH  40000
 
 //本次试验中以int表示一个页
 typedef int ELEM_TYPE;
@@ -28,12 +28,8 @@ typedef int ELEM_TYPE;
  */
 #define kMemoryPageCount    1000
 /**
- *  进程页面种类数
- */
-#define kProcessPageCount   500
-/**
  *  工作集窗口大小
  */
-#define kModelSetWindowSize 900
+#define kModelSetWindowSize 400
 
 #endif

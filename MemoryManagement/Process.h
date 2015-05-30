@@ -34,7 +34,7 @@ void process_initWithIDAndPageCount(Process *process, int processID, int count);
 /**将该进程用到的新的页调入内存*/
 void process_addPage(Process *process, int pageNumber);
 
-/**随机生成页面访问序列*/
+/**从文件读取生成页面访问序列*/
 void process_getSequence(Process *process);
 
 #endif /* defined(__MemoryManagement__Process__) */

@@ -11,7 +11,7 @@
 #include <time.h>
 #include "ModelSetWindow.h"
 
-#define kProcessCount   5
+#define kProcessCount   4
 
 int main(int argc, const char * argv[]) {
     
@@ -20,21 +20,18 @@ int main(int argc, const char * argv[]) {
     
     //第一个进程
     Process p1;
-    process_initWithIDAndPageCount(&p1, 1, 1300);
+    process_initWithIDAndPageCount(&p1, 1, 40000);
     //第二个进程
     Process p2;
-    process_initWithIDAndPageCount(&p2, 2, 1200);
+    process_initWithIDAndPageCount(&p2, 2, 39000);
     //第三个进程
     Process p3;
-    process_initWithIDAndPageCount(&p3, 3, 1400);
+    process_initWithIDAndPageCount(&p3, 3, 38000);
     //第四个进程
     Process p4;
-    process_initWithIDAndPageCount(&p4, 4, 1100);
-    //第五个进程
-    Process p5;
-    process_initWithIDAndPageCount(&p5, 5, 1000);
+    process_initWithIDAndPageCount(&p4, 4, 40000);
     
-    //五个进程对应的窗口
+    //四个进程对应的窗口
     ModelSetWindow window1;
     window_initWithProcess(&window1, &p1);
     ModelSetWindow window2;
@@ -43,10 +40,8 @@ int main(int argc, const char * argv[]) {
     window_initWithProcess(&window3, &p3);
     ModelSetWindow window4;
     window_initWithProcess(&window4, &p4);
-    ModelSetWindow window5;
-    window_initWithProcess(&window5, &p5);
     
-    ModelSetWindow windows[kProcessCount] = {window1, window2, window3, window4, window5};
+    ModelSetWindow windows[kProcessCount] = {window1, window2, window3, window4};
     
     while (1) {
         //查看是否全部进程都结束了
